@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>三秒区</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/js.js"></script>
+    <link href="css.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <nav id="nav" style="opacity: 0;box-shadow:0 0 0 black;border-bottom: 3px #ffffff solid">
+        <img src="./img/ui/logo.png" alt="logo图片" style="height: 110px;margin-left: 7%;">
+    </nav>
+    <div id="navul">
+        <ul style="position: relative;color: white;min-width: 295px">
+            <li id="current"><a data-en="THREES" data-cn="三秒区" href="#" class="menuOption">THREES</a></li>
+            <li><a data-en="FITNESS"   data-cn="健身房"   href="#" class="menuOption">FITNESS</a></li>
+            <li><a data-en="BAR" data-cn="清　吧" href="#" class="menuOption">BAR</a></li>
+            <li><a data-en="CONTACT" data-cn="联　系" href="#" class="menuOption">CONTACT</a></li>
+            <li  id="menublock" class="block" style="opacity:1;padding: 0;position:absolute;margin-top: 73px;width:20px;height: 2px;background: #E83420;"></li>
+        </ul>
+    </div>
+    <div id="slider" class="slider" style="position: relative">
+        <div class="pice" style="background: url('./img/bigbanner/bg0.jpg') center center;background-size: cover;"><div></div></div>
+        <!--<div class="pice" style="background: url('./img/bigbanner/bg0.jpg') center center no-repeat #be4050;background-size: contain;"><div></div></div>-->
+        <div class="pice" style="background: url('./img/bigbanner/bg1.jpg') center center;background-size: cover"><div></div></div>
+        <div class="pice" style="background: url('./img/bigbanner/bg2.jpg') center center;background-size: cover"><div></div></div>
+        <div class="pice" style="background: url('./img/bigbanner/bg3.jpg') center center;background-size: cover"><div></div></div>
+        <div style="background: #434343;width:100%;height:100%;z-index: 1;position:absolute;top: 0;left: 0;" class="background"></div>
+        <div style="position: absolute;right: 0;bottom: 0;z-index: 20;width: 400px;height: 40px">
+            <ul id="sliderCtrl" class="sliderCtrl">
+                <li data-tar="0" onclick=""></li>
+                <li data-tar="1" onclick=""></li>
+                <li data-tar="2" onclick=""></li>
+                <li data-tar="3" onclick=""></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="cause">
+        <div class="content">
+
+            <div class="introbox" style="float: left;width: 45%;">
+                <table cellspacing="5px" style="float: left;width: 100%;">
+                    <tr style="font-weight: 900">
+                        <td style="width:30%;font-size:24px;border: 3px solid #182987;background: #205491">时间</td>
+                        <td style="width:70%;font-size:24px;border: 3px solid #182987;background: #205491">班级</td>
+                    </tr>
+                    <tr>
+                        <td>9：00<br>—<br>11:00AM</td>
+                        <td>少儿基础班（6-15岁）<br>
+                            少儿提高班（6-15岁）<br>
+                            青少年基础班（15-24岁）</td>
+                    </tr>
+                    <tr>
+                        <td>14:30<br>—<br>16:30PM</td>
+                        <td>少儿基础班（6-15岁）<br>
+                            少儿提高班（6-15岁）<br>
+                            青少年基础班（15-24岁）</td>
+                    </tr>
+                    <tr>
+                        <td>19:00<br>—<br>21:00PM</td>
+                        <td>青少年基础班（15-24岁）<br>
+                            青少年提高班（15-24岁）
+                        </td>
+                    </tr>
+                </table>
+                <table cellspacing="5px" style="float: left;width: 100%;margin-top: 15px;">
+                    <tr style="font-weight: 900">
+                        <td colspan="2"  style="margin-top:15px;font-size:24px;border: 3px solid #182987;background: #205491">收费标准</td>
+                    </tr>
+                    <tr style="height: 70px;">
+                        <td>
+                            一期（12节课）/1080元
+                        </td>
+                        <td>
+                            两期（24节课）/1980元
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+
+            <div class="introbox" style="float:right;width: 50%">
+                <img src="img/cause/causes.png" style="width: 100%">
+                <div class="introline">
+                    <p class="title">基础班 BASIS CLASS</p>
+                    <p class="introtext">打好篮球基本功,加速身体长高,能为你挖掘孩子的篮球运动天分和潜力,在学习之余培养兴趣,掌握篮球基础技术。</p>
+                    <p class="introtext">训练内容主要有:篮球基本常识、规则裁判知识、熟悉球性练习、脚步移动、运球、传接球、原地投篮、急停投篮、
+                        抢篮板球、三步上篮、防守步伐、抢断球以及各种组合的技术训练、速度、弹跳,耐力等素质训练。</p>
+                </div>
+                <div class="introline" style="margin-bottom: 0;">
+                    <p class="title">提高班 ADVANCED CLASS</p>
+                    <p class="introtext">巩固基础、提高技术和增强素质，在有扎实的基本功上巩固丰富个人技术,加强身体对抗、参与实战比赛，提高技术和积累意识经验。</p>
+                    <p class="introtext">训练内容主要有:巩固基础训练、矫正不标准的篮球动作，较高要求的、组合的传接球、跳投、抢篮板球、盖帽、抢断球、反手上篮、勾手上
+                        篮、各种组合传球，左右手强化练习、稳定多样化的上篮技术、各种后卫,前锋,中锋进攻技术和防守组合技术；各种常用进攻配合、合防守、
+                        战术、1对1训练、半场3对3、5对5比赛，以及速度、弹跳、力量、爆发力等较高强度的素质训练。</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="showcase" style="background: #EAEAEA;">
+        <div class="content" style="height: 100%;min-width: 1030px">
+            <div class="teacherBox">
+                <img src="./img/teacher/1.png">
+                <p><span class="name">任欢</span><span class="title">原湖南大学篮球队员</span></p>
+                <p class="introtext">
+                    湖南大学毕业，原湖南大学篮球队员，多次代表学校参加各项比赛成绩优异，担任教练多年，经验丰富带出大批优秀球员.
+                </p>
+            </div>
+
+            <div class="teacherBox">
+                <img src="./img/teacher/2.png">
+                <p><span class="name">刘彬</span><span class="title">CUBA西南赛区得分王</span></p>
+                <p class="introtext">
+                 原国防科技大学篮球队主力球员，现任国防科大篮球队教练员，曾获CUBA西南赛区得分王.
+                </p>
+            </div>
+
+            <div class="teacherBox">
+                <img src="./img/teacher/3.png">
+                <p><span class="name">冯昆仑</span><span class="title">CUBA西南赛区冠军</span></p>
+                <p class="introtext">
+                    原湖南师大篮球队主力球员，曾获得湖南省大学生比赛冠军，CUBA西南赛区冠军！全国八强！
+                </p>
+            </div>
+
+            <div class="teacherBox">
+                <img src="./img/teacher/4.png">
+                <p><span class="name">张涛</span><span class="title">CUBA四大中锋之一</span></p>
+                <p class="introtext">
+                    湖南师大研究生毕业，原湖南师大篮球队主力中锋，层获得湖南省大学生比赛冠军，
+                    CUBA西南赛区冠军，全国八强，CUBA四大中锋之一。
+                </p>
+            </div>
+
+            <div class="teacherBox">
+                <img src="./img/teacher/5.png">
+                <p><span class="name">张俏男</span><span class="title">中国男子篮球NBL联赛</span></p>
+                <p class="introtext">
+                    2001年-2003年代表湖南参加全国男子篮球青年联赛。2003年11月-2007年效力于中国男子篮球NBL联赛
+                    东莞柏宁（现长沙柏宁）。2005年就读于河南大学。代表学校参加CBA-CUBA对抗赛以及全国大学生运动会。
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="footer" style="background:#E83420;position: relative;">
+        <div id="contactup" style="position:relative;width: 100%;height: 55%;background:#E83420;float:left;">
+            <div id="bottonIntro" class="content">
+                <div style="width: 60%;height: auto;float: left">
+                    <div class="block">
+                        <p class="title">收费标准</p>
+                        <p class="introtext">一期（12节课）1080元  两期（24节课）1980元<br>
+                            报两期赠送斯伯丁篮球一个和球衣一套
+                        </p>
+                    </div>
+                    <div class="block">
+                        <p class="title">暑假开班时间</p>
+                        <p class="introtext">第一期：7月20日-25/7月27日-8月1日<br>
+                            第二期：8月3日-8日/8月10日-15日<br>
+                            （每节课两小时/上午，下午，晚上时间段均开课）</p>
+                    </div>
+                    <div class="block" style="clear: both">
+                        <p class="title">开班优惠</p>
+                        <p class="introtext">两人同行 9折／三人同行 8.5折／五人同行 8折<br>
+                            毕业生享受8.8折优惠（不与以上活动叠加）</p>
+                    </div>
+                </div>
+            </div>
+            <img id="bottonIntroImg" src="img/contact/insertImg.png" style="position: absolute;bottom: 0;right: 0;height: 80%;">
+        </div>
+        <div id="contactdown" style="float:left;">
+            <div class="lg" style="margin-top: 1em">
+                <img src="./img/ui/lg-w.png" style="width: 100%;">
+            </div>
+            <div class="lt">
+                <p class="title">INTRODUCE</p>
+                <P class="introtext" style="color: black">
+                    长沙三秒区篮球公园是长沙最大的室内篮球主题公园，同时也是配套设施最齐全的篮球主题公园，室内有3个全场，4个半场，配套还有器械训练区，饮品休息区，淋浴房，更衣室，室内5人足球场，室外停车场等。把我们的篮球培训做成精品是我们做篮球培训的理念，让家长满意，让孩子身心健康成长是我们的目标。
+                </P>
+            </div>
+            <div class="md">
+                <p class="title">OFFICE</p>
+                <p style="color: black;padding: 0;margin: 0" class="qq"> 751176113</p>
+                <p style="color: black;padding: 0;margin: 0" class="wx"> 751176113</p>
+                <p style="color: black;padding: 0;margin: 0" class="phone"> 15507315353</p>
+                <p style="color: black;padding: 0;margin: 0" class="location"> 长沙市曙光路798城市体验馆2号馆
+                    (人民路和曙光路十字路口)</p>
+            </div>
+            <div class="rt">
+                <p class="title">QR CODE</p>
+                <span>
+                    <img src="./img/contact/wechat.png" style="width: 40%;margin-right: 8%">
+                    <img src="./img/contact/weibo.png" style="width: 40%;">
+                </span>
+            </div>
+        </div>
+        <div style="font-size: 12px;line-height:35px;color: #cbcbcb;text-align: right;position:absolute;bottom: 0;left:0;height: 5%;background:#434343;width: 100%;border-top: 1px inset black">
+            版权信息,© 2015-2016,湘ICP备 234561235 &nbsp;&nbsp;&nbsp;
+        </div>
+    </div>
+    <div id="PageControl" style="height:27px;text-align: center;width: 100%;position: fixed;z-index: 12;bottom: 20px;left:0;">
+        <span style="margin: 0 auto;padding: 0;height: 100%;list-style: none;overflow:hidden;">
+            <img id="btnPageControl" src="./img/ui/pageControl.png">
+        </span>
+    </div>
+</body>
+</html>

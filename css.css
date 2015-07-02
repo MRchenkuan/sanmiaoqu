@@ -1,0 +1,66 @@
+html{font-size: 16px;font-family:"Helvetica","Hiragino Sans GB","Microsoft YaHei",sans-serif;}
+body{padding: 0;margin: 0;height: 100%;width: 100%;position: absolute;left:0;top:0;bottom: 0;overflow-y: hidden;min-width: 960px;overflow-x: hidden}
+embed{display: none;}
+#slider,#showcase,#footer,#cause{width: 100%;height:100%;min-height: 460px;overflow: hidden}
+a{text-decoration: none}
+#nav{min-width:960px;background: #182987;position: fixed;top: 0;left: 0;width: 100%;height: 110px;box-shadow: 0 0 10px black;z-index: 9997}
+#navul{margin:0;top:0;right: 7.5%;position: fixed;z-index: 9998;width: 35%;height: 110px}
+#navul ul{margin: 0;padding: 0;float: right;width: 100%}
+#navul li{width:14.2%;text-align:center;float: left;list-style: none;font-size: 2em;color: white;line-height: 110px;padding-left: 14.2%;height: 110px;}
+#navul ul li:nth-child(1){padding-left: 0;}
+#navul li a{;color:#ffffff;font-size: 16px;transition:all .3s ease}
+#navul li a:hover{transition:all .3s ease}
+/*滑块样式*/
+#navul #current a{color:#E83420}
+
+.sliderCtrl{margin: 0;padding: 0;float: right;margin-right: 20%;}
+.sliderCtrl li{background: white;transition:all .5s ease;height: 15px;width: 15px;margin:0 10px;float: left;list-style: none;border-radius: 10px;}
+.sliderCtrl li:hover{background: #E83420;transition:all .5s ease;}
+
+.pice{
+    width: 100%;
+    transition:all 900ms ease;
+}
+
+
+#cause{background: #E83420;}
+.content{width: 86%; margin: 0 auto;position: relative}
+.introbox{position: relative}
+.content .introbox .introline{width: 100%;margin: 20px auto}
+.content .introbox .introline .title{color:#182987;padding: 0;margin: 10px 0;font-weight: 900;}
+.content .introbox .introline .introtext{color:white;line-height: 2;padding: 0;margin: 0;font-size: 12px;}
+
+.content .teacherBox{position: relative;width: 18.2%;float: left;margin-left: 2.24%;min-width: 187px;}
+.content .teacherBox:nth-child(1){margin-left: 0}
+.teacherBox img{width: 100%;transition:all .5s ease}
+.teacherBox img:hover{transform:scale(1.05);transition:all .5s ease}
+.teacherBox .title{transition:all .3s ease;text-align: center;font-size: 12px;background: #E83420;color: #ffffff;float: right;padding: 2%;width: 65%}
+.teacherBox .title:hover{background-color: #182987;transition:all .3s ease}
+.teacherBox .name{color: #182987;float: left;width: 30%;font-size: 18px;}
+.teacherBox .introtext{font-size: 12px;color:#182987;float: left;text-align: justify;line-height: 1.5}
+
+#contactdown{padding:2.5% 5%;width: 90%;height: 40%;background:#eaeaea;color: #182987;}
+#contactdown div{position: relative}
+#contactdown .lg{width: 10%;float: left;height: 95%;}
+#contactdown .lt{width: 27%;float: left;height: 95%;padding-left: 5%}
+#contactdown .md{width: 24%;float: left;height: 95%;padding-left: 5%}
+#contactdown .rt{width: 21%;float: left;height: 95%;padding-left: 5%}
+#contactdown .title{font-weight: 900}
+#contactdown .introtext{font-size: 12px;line-height: 1.5;text-align: justify}
+#contactdown .qq:before{content: '　'; background: url("./img/ui/linkin.png") 0 0;background-size: cover}
+#contactdown .wx:before{content: '　'; background: url("./img/ui/linkin.png") 0 72px;background-size: cover}
+#contactdown .phone:before{content: '　'; background: url("./img/ui/linkin.png") 0 44px;background-size: cover}
+#contactdown .location:before{content: '　'; background: url("./img/ui/linkin.png") 0 18px;background-size: cover}
+
+#contactup img{position: relative}
+
+#PageControl span{display: block;position: relative;}
+#PageControl img{top:-27px;width:33px;transition:top .3s ease,transform 900ms ease;position: relative}
+#PageControl img:hover{top:0;transition:top .3s ease,transform 900ms ease}
+
+#bottonIntro .title{color:#182987;font-weight: 900;padding:5px 0;margin: 0}
+#bottonIntro .introtext{margin:0;font-size: 12px;color: #ffffff;float: left;text-align: justify;line-height: 1.5}
+#bottonIntro .block{float:left;width: 50%;}
+
+.introbox td{transition:all .3s ease; border: 2px solid white;color: white;text-align: center;font-size: 12px;padding: 10px;}
+.introbox td:hover{background: #205491;transition:all .3s ease}
