@@ -14,8 +14,10 @@ a{text-decoration: none}
 #navul #current a{color:#E83420}
 
 .sliderCtrl{margin: 0;padding: 0;float: right;margin-right: 20%;}
-.sliderCtrl li{background: white;transition:all .5s ease;height: 15px;width: 15px;margin:0 10px;float: left;list-style: none;border-radius: 10px;}
-.sliderCtrl li:hover{background: #E83420;transition:all .5s ease;}
+.sliderCtrl li{position:relative;border: 1px white solid/*background: white*/;transition:background .5s ease;height: 15px;width: 15px;margin:0 10px;float: left;list-style: none;border-radius: 10px;}
+.sliderCtrl li:hover{background: #E83420;transition:background .5s ease;}
+.sliderCtrl li:after{content: '';transition: all .3s linear;border-radius: 15px;background: white;position: absolute;width: 0;height: 0;top: 50%;left: 50%;}
+.sliderCtrl li:hover:after{content: '';transition: all .3s linear;border-radius: 15px;background: white;position: absolute;width: 100%;height: 100%;top: 0;left: 0;}
 
 .pice{
     width: 100%;

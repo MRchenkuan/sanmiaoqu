@@ -55,7 +55,6 @@ $(document).ready(function(){
             Anchor[2]=showcase.offsetTop;
             Anchor[3]=footer.offsetTop;
 
-
         });
 
         /*下箭头显示*/
@@ -197,6 +196,12 @@ $(document).ready(function(){
             var eWhellDelta = e.wheelDelta||-e.detail;
             srollFace = eWhellDelta<0?'down':'up';
             if($nav.is(':animated'))return;
+            /*更新锚点位置*/
+            Anchor[0] = 0;
+            Anchor[1]=cause.offsetTop;
+            Anchor[2]=showcase.offsetTop;
+            Anchor[3]=footer.offsetTop;
+
             if(eWhellDelta<0){
                 /*如果向下滚动*/
 //                    $nav.slideUp();//收起nav
@@ -348,7 +353,9 @@ $(document).ready(function(){
     });
     setInterval(function(){
         sliderCtrl.find('li').removeAttr('style');
-        sliderCtrl.find('li').eq(i).css({background:'#E83420'});
+        sliderCtrl.find('li').eq(i).css({
+            background:'#E83420'
+        });
         slider.turnTo(i++);
         if(i>=slider.pices.length){
             i=0;
